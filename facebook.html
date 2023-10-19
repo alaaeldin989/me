@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="facebook.css">
+    <title>facebook</title>
+</head>
+<body>
+ <div class="crud">
+    <div class="head">
+        <h2>أبناء مصر و السودان <i class="fas fa-shipping-fast"></i></h2>
+        <p>PRODUCT MANGEMENT SYSTEM</p>
+    </div>
+    <div class="inputs">
+        <input type="text" id="title" placeholder="title">
+        <div class="price">
+            <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+            <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+            <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+            <small onkeyup="getTotal()" id="total"></small>
+        </div>
+        <input type="number" id="count" placeholder="count">
+        <input type="text" id="category" placeholder="catogery">
+        <input type="text" id="sold it by" placeholder="sold by">
+<button id="submit">Create</button>
+    </div>
+    <div class="outputs">
+        <div class="searchblock">
+            <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="Search">
+            <div class="btnsearch">
+            <button onclick="getsearchmood(this.id)" id="searchTitle">Search By Title <i class="fas fa-search"></i></button>
+            <button onclick="getsearchmood(this.id)" id="searchcatogray">Search By Catogry <i class="fas fa-search"></i></button>
+        </div>
+        </div>
+        <div id="deleteall">
+
+        </div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>sold by</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+        <tbody id="tbody"> 
+                <tr>
+                    <td>1</td>
+                    <th>sold by</th>
+                    <td>oppo</td>
+                    <td>2000</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>2000</td>
+                    <td>phone</td>
+                    <td><button id="update">update</button></td>
+                 <td><button  id="delete">delete </button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+ </div>
+    
+
+ <footer>
+     <div class="footer-section">
+        <p>جميع حقوق النشر محفوظة لشركة المهندس <span>@ علاء الدين 2023<i class="far fa-check-circle"></i></span></p>
+        <div class="socials">
+         <a href=""><i class="fab fa-twitter"></i> </a>
+        <a href=""><i class="fab fa-instagram"></i> </a>
+          <a href=""><i class="fab fa-facebook"></i> </a>
+    
+ </footer>
+<script src="facebook.js"></script>
+</body>
+</html>
